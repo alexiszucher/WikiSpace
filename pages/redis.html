@@ -1,0 +1,27 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<a href="index.html">Retour</a>
+<h2>Documentation Redis</h2>
+
+
+<div tag="INSTALLATION DE REDIS">
+    <b>INSTALLATION DE REDIS</b>
+    <br /><br />
+    <textarea cols="100" rows="7">
+        sudo apt-get install redis-server
+    </textarea>
+
+</div>
+
+<br /><br />
+
+<div tag="CHARGEMENT MODULE REDIS">
+    <b>CHARGEMENT MODULE REDIS</b>
+    <br /><br />
+    <textarea cols="100" rows="7">
+        -> Aller dans /etc/redis/redis.conf
+        -> Dans la partie Module, ajouter une ligne "loadmodule /home/alexis/ModuleRedis/RedisJSON/target/release/librejson.so"
+        -> Sauvegarder, puis lancer redis en faisant "redis-server /etc/redis/redis.conf"
+    </textarea>
+</div>
+
