@@ -14,6 +14,8 @@
     <a href="redis.php"><button class="btn btn-success">Documentation Redis</button></a>
     <br /><br />
     <a href="ssh.php"><button class="btn btn-success">Documentation SSH</button></a>
+    <br /><br />
+    <a href="compte-rendu-alternance.php"><button class="btn btn-success">Compte Rendu Alternance</button></a>
 </div>
 <div align="center" class="col-12 margin-top-30">
     <br /><br /><br /><br />
