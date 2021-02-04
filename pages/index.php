@@ -17,12 +17,6 @@
     <br /><br />
     <a href="compte-rendu-alternance.php"><button class="btn btn-success">Compte Rendu Alternance</button></a>
 </div>
-<div align="center" class="col-12 margin-top-30">
-    <br /><br /><br /><br />
-    <h3 class="white"><b>Composants</b></h3>
-    <br />
-    <a href="components/js.php"><button class="btn btn-success">Composants JavaScript</button></a>
-</div>
 
 <?php require_once "footer.php"; ?>
 

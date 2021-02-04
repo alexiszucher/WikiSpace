@@ -39,7 +39,32 @@
                 // Let's Go !
             }
         </textarea>
+        <br /><br />
     </div>
+
+    <div id="CONNEXION BASE DE DONNEES">
+        <b>CONNEXION BASE DE DONNEES</b>
+        <br /><br />
+        <textarea cols="100" rows="7">
+            $bdd = new PDO('mysql:host=localhost;dbname=alexis1099_trade', 'root', '');
+        </textarea>
+        <br /><br />
+    </div>
+
+    <div id="REQUETE SQL ET PARCOURS DES DONNEES">
+        <b>REQUETE SQL ET PARCOURS DES DONNEES</b>
+        <br /><br />
+        <textarea cols="100" rows="7">
+            $request = $bdd->prepare("SELECT * FROM applications WHERE id=:id");
+            $request->bindParam(':id', $_SESSION['id']);
+            $request->execute();
+            while($app = $request->fetch(PDO::FETCH_ASSOC)) {
+                // TODO ! 
+            }
+        </textarea>
+        <br /><br />
+    </div>
+
 </div>
 
 <?php require_once "footer.php"; ?>

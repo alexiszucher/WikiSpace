@@ -26,19 +26,6 @@
             -> Sauvegarder, puis lancer redis en faisant "redis-server /etc/redis/redis.conf"
         </textarea>
     </div>
-
-    <h2>(A implémenter)</h2>
-    <p><b>apt-get install redis-server</b></p>
-    <p><b>apt-get install cmake</b></p>
-    <p><b>(commande installer rust)</b></p>
-    <p><b>cloner https://github.com/RedisJSON/RedisJSON.git</b></p>
-    <p><b>aller dans le dossier du repo git et faire "cargo build --release"</b></p>
-    <p><b>Aller dans /etc/redis/redis.conf</b></p>
-    <p><b>
-        Dans le fichier, il y a une section module. Ajouter la ligne permettant d'inclure le module.<br />
-        Exemple : "loadmodule /home/alexis/ModuleRedis/RedisJSON/target/release/librejson.so"
-    </b></p>
-    <p><b>Lancer Redis avec la commande "redis-server /etc/redis/redis.conf"</b></p>
 </div>
 
 <?php require_once "footer.php"; ?>
