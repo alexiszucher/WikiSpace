@@ -6,7 +6,8 @@
     <div tag="CREATION DASHBOARD GLISSER DEPOSER">
         <b>CREATION DASHBOARD GLISSER DEPOSER</b>
         <br /><br />
-        <textarea cols="100" rows="7">
+        <button onclick="copy('1')" id="copy" type="button" class="btn btn-dark">COPIE</button><br />
+        <textarea id="1" cols="100" rows="7">
             Utiliser la librairie gridstack
         </textarea>
     </div>
@@ -16,7 +17,8 @@
     <div tag="INTEGRATION GOOGLE MAP CUSTOMIZE">
         <b>INTEGRATION GOOGLE MAP CUSTOMIZE</b>
         <br /><br />
-        <textarea cols="100" rows="7">
+        <button onclick="copy('2')" id="copy" type="button" class="btn btn-dark">COPIE</button><br />
+        <textarea id="2" cols="100" rows="7">
             Utiliser la librairie leaflet
             <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet" type="text/css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="anonymous"/>
             <div id="mapid" style="height: 400px;"></div>
@@ -37,7 +39,8 @@
     <div tag="REDIRECTION URL">
         <b>REDIRECTION URL</b>
         <br /><br />
-        <textarea cols="100" rows="7">
+        <button onclick="copy('3')" id="copy" type="button" class="btn btn-dark">COPIE</button><br />
+        <textarea id="3" cols="100" rows="7">
             document.location.href = "template/home.php";
         </textarea>
     </div>

@@ -6,7 +6,8 @@
     <div tag="CONNEXION SSH A UN SERVEUR">
         <b>CONNEXION SSH A UN SERVEUR</b>
         <br /><br />
-        <textarea cols="100" rows="7">
+        <button onclick="copy('1')" id="copy" type="button" class="btn btn-dark">COPIE</button><br />
+        <textarea id="1" cols="100" rows="7">
             ssh root@|server-ip|
 
             example : ssh root@175.60.0.25
@@ -19,7 +20,8 @@
     <div tag="GENERATION JEUX DE CLE">
         <b>GENERATION JEU DE CLES</b>
         <br /><br />
-        <textarea cols="100" rows="7">
+        <button onclick="copy('2')" id="copy" type="button" class="btn btn-dark">COPIE</button><br />
+        <textarea id="2" cols="100" rows="7">
             ssh-keygen -t rsa -C alexiszucher -b 2048
 
             Le jeu de clés est stocké dans un dossier .ssh (/home/alexis/.ssh)

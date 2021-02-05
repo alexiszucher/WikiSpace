@@ -6,7 +6,8 @@
     <div tag="INSTALLATION DE REDIS">
         <b>INSTALLATION DE REDIS</b>
         <br /><br />
-        <textarea cols="100" rows="7">
+        <button onclick="copy('1')" id="copy" type="button" class="btn btn-dark">COPIE</button><br />
+        <textarea id="1" cols="100" rows="7">
             sudo apt-get install redis-server
         </textarea>
 
@@ -17,7 +18,8 @@
     <div tag="CHARGEMENT MODULE REDIS">
         <b>CHARGEMENT MODULE REDIS</b>
         <br /><br />
-        <textarea cols="100" rows="11">
+        <button onclick="copy('2')" id="copy" type="button" class="btn btn-dark">COPIE</button><br />
+        <textarea id="2" cols="100" rows="11">
             -> Si c'est un repo git, clonez
             -> Allez dans le dossier du repo, puis faites "cargo build --release"
             -> Un dossier target/release s'est créé dans le repo.

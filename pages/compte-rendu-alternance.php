@@ -15,10 +15,6 @@
 <br />
 A FAIRE : 
 <br />
-- Changer CSS SMART city avec mt-1, mt-2, mt-3
-<br />
-- JS à changer SMART CITY
-<br />
 - GAAPSE SLIM : POSITION CSS top index à fix
 <br />
 - ADMIN GAAPSE SLIM : AFFICHER TOUS LES DOMAINES 
