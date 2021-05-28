@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../resources/css/style.css" />
 <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css">
+<?php include '../resources/php/functions.php'; ?>
 
 <div class="container-fluid">
     <div class="row">
