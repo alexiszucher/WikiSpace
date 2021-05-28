@@ -15,7 +15,6 @@
     <br /><br />
     <a href="ssh.php"><button class="btn btn-success">Documentation SSH</button></a>
     <br /><br />
-    <a href="compte-rendu-alternance.php"><button class="btn btn-success">Compte Rendu Alternance</button></a>
 </div>
 
 <?php require_once "footer.php"; ?>
