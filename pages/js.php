@@ -44,6 +44,64 @@
             document.location.href = "template/home.php";
         </textarea>
     </div>
+
+    <div tag="Mise en place MQTT">
+        <br /><br />
+        <b>Mise en place MQTT</b>
+        <br /><br />
+        <button onclick="copy('4')" id="copy" type="button" class="btn btn-dark">COPIE</button><br />
+        <textarea id="4" cols="100" rows="15">
+            const http = require('http');
+            const axios = require('axios');
+            const mqtt = require('mqtt');
+            const client = mqtt.connect('mqtt://broker.hivemq.com');
+
+
+            client.on('connect', () => { 
+                console.log("Connecté !");
+                client.subscribe('epsi/groupe1/groupe3');
+                client.publish('epsi/groupe1/groupe3', "{\"endpoint\":\"users\", \"source\":\"connectedObject\", \"date\":\"2021-10-21 17:06:29\", \"content\":\"test\"}");
+            });
+
+            client.on('message', (topic, message) => {
+                var jsonMessage = JSON.parse(message.toString());
+                if(jsonMessage.endpoint == "users") {
+                    callHttpGet('http://localhost:3000/users');
+                } else {
+                    callHttpPost('http://localhost:3000/users/register');
+                }
+            });
+
+
+            function callHttpGet(url) {
+                http.get(url, (resp) => {
+                    let data = '';
+
+                    // A chunk of data has been received.
+                    resp.on('data', (chunk) => {
+                        data += chunk;
+                    });
+
+                    // The whole response has been received. Print out the result.
+                    resp.on('end', () => {
+                        console.log(JSON.parse(data));
+                    });
+                });
+            }
+
+            function callHttpPost(url) {
+                axios.post(url, {
+                    login: 'Buy',
+                    password: 'milk'
+                }) .then(res => {
+                    console.log(`statusCode: ${res.statusCode}`)
+                    console.log(res)
+                }) .catch(error => {
+                    console.error(error)
+                })
+            }
+        </textarea>
+    </div>
 </div>
 
 <?php require_once "footer.php"; ?>

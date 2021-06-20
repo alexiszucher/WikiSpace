@@ -1,0 +1,27 @@
+{
+  "name": "api-node",
+  "version": "1.0.0",
+  "description": "api-gostyle",
+  "main": "api.js",
+  "scripts": {
+    "integration-tests": "newman run GoStyle.postman_collection.json - environment GoStyle.postman_environment.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastienleviez/api-node.git"
+  },
+  "author": "Ataz & Pointoch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bastienleviez/api-node/issues"
+  },
+  "homepage": "https://github.com/bastienleviez/api-node#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "newman": "^5.2.3"
+  }
+}
